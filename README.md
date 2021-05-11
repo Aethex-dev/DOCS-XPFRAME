@@ -30,4 +30,12 @@ $router->on("get", "hello", function () {
 $router->handle_events();
 ```
 
+*Whats going on here?* Lets have a look at the code now
+
+`Initialize Router`<br>
+This code is used for creating an instance of the router, here is the class namespace you need to declare after the namespace
+```php
+use xenonmc\xpframe\core\router\Router;
+```
+
 ###### An Official XENONMC Project
