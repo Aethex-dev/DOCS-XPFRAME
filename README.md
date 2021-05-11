@@ -45,4 +45,9 @@ $router->on("event name (possible values: [ get | post | 404 ]", "url/empty [ us
     // Callback
 });
 ```
+
+`Find and process all router URL events`
+Take all registered events and check if they should be called
+NOTE: calling this multiple times means your page may run more than once, we recomend calling this just once if you have one router instance and leaving it at the bottom of your main `run()` method or at the bottom of your code block where events are registered
+
 ###### An Official XENONMC Project
