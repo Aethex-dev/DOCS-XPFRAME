@@ -21,7 +21,7 @@ Creating a route
 // Initialize Router
 $router = new Router();
 
-// Register the event for a page with the URL of `/hello`
+// Register the event for a page with the URL of [ /hello ]
 $router->on("get", "hello", function () {
     echo "Hello World";
 });
@@ -38,4 +38,11 @@ This code is used for creating an instance of the router, here is the class name
 use xenonmc\xpframe\core\router\Router;
 ```
 
+`Register the event for a page with the URL of [ /hello ]`<br>
+usage:
+```php
+$router->on("event name (possible values: [ get | post | 404 ]", "url/empty [ use an empty string if event name is 404, empty string also stands for [ / ] ]", function () {
+    // Callback
+});
+```
 ###### An Official XENONMC Project
