@@ -74,4 +74,12 @@ $router->on("get", "hello/world", function () {
 $router->handle_events();
 ```
 
+## Serving our webpage
+Now that we have a little bit of code written down now, we can start by serving it with PHP-CLI's built in development server with the following commands:
+```bash
+cd path/to/project
+php -S localhost:8080
+```
+
+
 ###### An Official XENONMC Project
