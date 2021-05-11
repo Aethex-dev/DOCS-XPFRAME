@@ -23,7 +23,7 @@ $router = new Router();
 
 // Register the event for a page with the URL of [ /hello ]
 $router->on("get", "hello", function () {
-    echo "Hello World";
+    echo "Hello";
 });
 
 // Find and process all router URL events
@@ -44,6 +44,30 @@ usage:
 $router->on("event name (possible values: [ get | post | 404 ]", "url/empty [ use an empty string if event name is 404, empty string also stands for [ / ] ]", function () {
     // Callback
 });
+```
+
+Now lets add more pages, here is an example of how to do so:
+```php
+// Initialize Router
+$router = new Router();
+
+// Register the event for a page with the URL of [ /hello ]
+$router->on("get", "hello", function () {
+    echo "Hello";
+});
+
+// Register the event for a page with the URL of [ /test ]
+$router->on("get", "test", function () {
+    echo "Test Page";
+});
+
+// Register the event for a page with the url of [ /hello/world ]
+$router->on("get", "hello/world", function () {
+    echo "Hello World";
+});
+
+// Find and process all router URL events
+$router->handle_events();
 ```
 
 `Find and process all router URL events`
