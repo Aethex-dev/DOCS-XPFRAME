@@ -80,6 +80,11 @@ Now that we have a little bit of code written down now, we can start by serving 
 cd path/to/project
 php -S localhost:8080
 ```
-
+NOTE: using port 8080 isn't required, you may use any open port you want
+For linux users, heres how to serve your webpage
+```shell
+cd path/to/project
+sudo php -S localhost:8080
+```
 
 ###### An Official XENONMC Project
