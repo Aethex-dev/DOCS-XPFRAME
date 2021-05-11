@@ -87,4 +87,9 @@ cd path/to/project
 sudo php -S localhost:8080
 ```
 
+## Configuring XPFRAME
+XPFRAME's modules can be configured quickly via the config, for example, we want to use PHP for a console application where we won't need to use XPFRAMES content rendering system, we can simply disable the auto constructor for it.
+
+
+
 ###### An Official XENONMC Project
